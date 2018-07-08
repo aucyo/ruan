@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+<struts>
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant>
+ 
+    <package name="user.action" extends="struts-default">
+    	<action name="login" class="user.action.UserAction"
+    		method="login">
+    		<result name="loginjsp">/user/login.jsp</result>
+    	</action>
+    	<action name="logup" class="user.action.UserAction"
+    		method="logup">
+    		<result name="logupjsp">/user/logup.jsp</result>
+    	</action>
+    	<action name="pwdCheck" class="user.action.UserAction"
+    		method="pwdCheck">
+    		<result name="y">/user/myInforma.jsp</result>
+    		<result name="n">/user/login2.jsp</result>
+    		<result name="reject">/user/reject.jsp</result>
+    		<result name="admin">/user/admin.jsp</result>
+    	</action>
+    	<action name="accuses" class="user.action.UserAction"
+    		method="accuses">
+    		<result name="adminjsp">/user/admin.jsp</result>
+    	</action>
+    	<action name="rejects" class="user.action.UserAction"
+    		method="rejects">
+    		<result name="admin2jsp">/user/admin2.jsp</result>
+    	</action>
+    	<action name="doReject" class="user.action.UserAction"
+    		method="doReject">
+    		<result name="adminjsp">/user/admin.jsp</result>
+    	</action>
+    	<action name="undoReject" class="user.action.UserAction"
+    		method="undoReject">
+    		<result name="admin2jsp">/user/admin2.jsp</result>
+    	</action>
+    	<action name="myInform" class="user.action.UserAction"
+    		method="myInform">
+    		<result name="myInformjsp">/user/myInforma.jsp</result>
+    	</action>
+    	<action name="updateMyInform" class="user.action.UserAction"
+    		method="updateMyInform">
+    		<result name="myInformjsp">/user/myInforma.jsp</result>
+    	</action>
+    	<action name="updateItem" class="user.action.UserAction"
+    		method="updateItem">
+    		<result name="myIssuesjsp">/user/myIssues.jsp</result>
+    	</action>
+    	<action name="myIssues" class="user.action.UserAction"
+    		method="myIssues">
+    		<result name="myIssuesjsp">/user/myIssues.jsp</result>
+    	</action>
+    	<action name="search" class="user.action.UserAction"
+    		method="search">
+    		<result name="searchUserjsp">/user/searchUser.jsp</result>
+    		<result name="searchItemjsp">/user/searchItem.jsp</result>
+    	</action>
+    	<action name="logupsave" class="user.action.UserAction"
+    		method="logupsave">
+    		<result name="y">/user/login.jsp</result>
+    		<result name="n">/user/logup2.jsp</result>
+    	</action>
+    	<action name="issuePage" class="user.action.UserAction"
+    		method="issuePage">
+    		<result name="issuePagejsp">/user/issuePage.jsp</result>
+    	</action>
+    	<action name="commitIssue" class="user.action.UserAction"
+    		method="commitIssue">
+    		<result name="myIssuesjsp">/user/myIssues.jsp</result>
+    	</action>
+    	<action name="hisInform" class="user.action.UserAction"
+    		method="hisInform">
+    		<result name="hisInformjsp">/user/hisInform.jsp</result>
+    	</action>
+    	<action name="addUtU" class="user.action.UserAction"
+    		method="addUtU">
+    		<result name="hisInformjsp">/user/hisInform.jsp</result>
+    	</action>
+    	<action name="hisItem" class="user.action.UserAction"
+    		method="hisItem">
+    		<result name="hisItemjsp">/user/hisItem.jsp</result>
+    	</action>
+    	<action name="addItU" class="user.action.UserAction"
+    		method="addItU">
+    		<result name="hisItemjsp">/user/hisItem.jsp</result>
+    	</action>
+    	<action name="addAccuse" class="user.action.UserAction"
+    		method="addAccuse">
+    		<result name="hisInformjsp">/user/hisInform.jsp</result>
+    	</action>
+    	
+    	
+    	
+
+    </package>
+
+</struts>

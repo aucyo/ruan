@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping package="user">
+    <class name="Basic" table="basic">
+        <id name="uid" column="uid">
+            <generator class="native">
+            </generator>
+        </id>
+        <property name="phone" />
+    </class>
+    <class name="Up" table="up">
+        <id name="uid" column="uid">
+            <generator class="native">
+            </generator>
+        </id>
+        <property name="pwd" />
+        <property name="pow" />
+    </class>
+    <class name="User" table="user">
+        <id name="uid" column="uid">
+            <generator class="native">
+            </generator>
+        </id>
+        <property name="sname" />
+        <property name="sex" />
+        <property name="qq" />
+        <property name="wc" />
+        <property name="birth" />
+        <property name="dsc" />
+        <property name="icon" />
+        <property name="loc" />
+    </class>
+    <class name="Item" table="item">
+        <id name="iid" column="iid">
+            <generator class="native">
+            </generator>
+        </id>
+        <property name="uid" />
+        <property name="iname" />
+        <property name="oprice" />
+        <property name="cprice" />
+        <property name="image1" />
+        <property name="image2" />
+        <property name="image3" />
+        <property name="image4" />
+        <property name="image5" />
+        <property name="image6" />
+        <property name="category" />
+        <property name="date" />
+        <property name="dsc" />
+    </class>
+    <class name="ItU" table="itu">
+        <id name="ituid" column="ituid">
+            <generator class="native">
+            </generator>
+        </id>
+        <property name="iid" />
+        <property name="cuser_id" />
+        <property name="comment" />
+        <property name="cdate" />
+    </class>
+    <class name="UtU" table="utu">
+        <id name="utuid" column="utuid">
+            <generator class="native">
+            </generator>
+        </id>
+        <property name="user1_id" />
+        <property name="user2_id" />
+        <property name="comment" />
+        <property name="cdate" />
+    </class>
+    <class name="Accuse" table="accuse">
+        <id name="aid" column="aid">
+            <generator class="native">
+            </generator>
+        </id>
+        <property name="user1_id" />
+        <property name="user2_id" />
+        <property name="accusement" />
+        <property name="adate" />
+    </class>
+    
+    
+    
+    
+</hibernate-mapping>
