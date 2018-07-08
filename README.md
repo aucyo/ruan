@@ -1,7 +1,7 @@
 # ruan
 我的软件3课设
  
-##二手物品信息展示平台
+##二手物品信息展示平台（小水小水，轮子完全自己造，造的有点粗糙）
 ~~~
 此设计在windows10系统下编写完成，使用Java EE版本的Eclipse开发，
 网页代码使用html结合JavaScript实现。后端使用Struts2及Hibernate框架，
